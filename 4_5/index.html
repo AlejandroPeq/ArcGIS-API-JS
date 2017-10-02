@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>ArcGIS API for JavaScript 4.5</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/custom.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<style>
+		@font-face {
+			font-family: Avenir;
+			src: url("fonts/Avenir_Next_W00_400.ttf");
+		}
+
+
+	</style>
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section data-background="images/devsummit-2018.jpg">
+
+				<img style="padding:30px;" src="images/logojs.png" alt="">
+				<h2 style="color:black; text-shadow: 2px 2px 4px white;">ArcGIS API for JavaScript</h2>
+				<h3 style="color:black; text-shadow: 2px 2px 4px white;">Version 4.5</h3>
+				<p style="font-size:20px;">Alejandro Pequeño Pulleiro</p>
+				<p style="font-size:20px;"><img  style="width:40px;vertical-align: middle;background: none;border: none;box-shadow: none;" src="https://image.flaticon.com/icons/svg/174/174876.svg"  alt=""><a href=" https://twitter.com/alejanndropeq?lang=es" target="_blank"> alejanndropeq</a></p>
+
+			</section>
+			<section data-background="images/presentacionbanner1.jpg">
+				<!--<img style="width:150px; margin:0px;background: none;border: none;box-shadow: none; " src="images/giphy.gif" alt="">-->
+				<img style=" width:150px;margin: none;background: none;border: none;box-shadow: none; " src="images/giphy.gif" alt="">
+
+				<p>La versión 4.5 del API de ArcGIS para JavaScript agrega algunas funciones clave y varias mejoras. En el siguiente enlace se detallan todas las nuevas características de esta nueva versión "<a href="https://developers.arcgis.com/javascript/latest/guide/release-notes/index.html">release notes</a>"</p>
+				</section>
+			<section>
+
+
+
+			<section data-background="images/presentacionbanner2.jpg">
+
+				<p>Renderizados más rápidos</p>
+				<p style="font-size:18px;">Echa un vistazo al siguiente ejemplo que muestra 180.000 puntos de votación. El usuario puede mover el control deslizante para explorar los recintos que reportaron márgenes similares de victoria para cada candidato. A pesar de la gran cantidad de datos mostrados, la visualización se actualiza sin problemas y rápidamente.</p>
+				<iframe style="border: 4px solid #fff;box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);width:100%; height:400px; " src="https://developers.arcgis.com/javascript/latest/sample-code/visualization-vv-opacity-animate/live/index.html" frameborder="0"></iframe>
+			</section>
+
+
+
+			<section data-background="images/presentacionbanner2.jpg">
+				<p>La vista permite visualizar más cantidad de datos</p>
+				<p style="font-size:18px;">La implementación 2D actual de FeatureLayer procesa gráficos con SVG, lo que limita el número de entidades que se pueden mostrar en la vista. Ahora que todos los navegadores modernos soportan WebGL, podemos optimizar la canalización de dibujo para que pueda mostrar cientos de miles, incluso millones de puntos en el navegador.</p>
+				<iframe style="border: 4px solid #fff;box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);width:100%; height:400px; " src="https://developers.arcgis.com/javascript/latest/sample-code/visualization-vv-color-animate/live/index.html" frameborder="0"></iframe>
+			</section>
+
+
+			</section>
+
+			<section data-background="images/presentacionbanner1.jpg">
+				<p>WebGL soporta resaltado automático</p>
+				<p style="font-size:18px;">FeatureLayers que tengan activado el resaltado y usen soporte WebGL, tendrá como resultado que aparezca automáticamente cuando los usuarios pasen el cursor sobre las distintas entidades mostrando su ventana emergente.<br> En este ejemplo tenemos varias vistas con distintos sistemas de proyección.</p>
+				<iframe style="border: 4px solid #fff;box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);width:100%; height:400px; " src="https://developers.arcgis.com/javascript/latest/sample-code/views-composite-views/live/index.html" frameborder="0"></iframe>
+			</section>
+
+			<section data-background="images/presentacionbanner2.jpg">
+				<p>Dibujar</p>
+				<p style="font-size:18px;">Ahora puede habilitar el dibujo en sus aplicaciones 4.x. En esta versión inicial de herramientas de boceto, puede dibujar nuevas geometrías en un mapa 2D. El soporte completo para el dibujo y edición estará disponible incrementalmente en futuras versiones.</p>
+				<iframe style="border: 4px solid #fff;box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);width:100%; height:400px; " src="https://developers.arcgis.com/javascript/latest/sample-code/sketch-geometries/live/index.html" frameborder="0"></iframe>
+			</section>
+
+			<section data-background="images/presentacionbanner2.jpg">
+				<p>Mejoras OGC</p>
+				<p style="font-size:18px;">Las capas WMS y WMTS ahora se pueden visualizar en una escena 3D. Además, se ha añadido soporte KML para mapas 2D. El soporte para KML en escenas 3D estará disponible en una versión futura.<br> Este es otro ejemplo con las nuevas funcionalidades de la 4.5</p>
+				<iframe style="border: 4px solid #fff;box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);width:100%; height:400px; " src="https://developers.arcgis.com/javascript/latest/sample-code/visualization-sm-multivariate/live/index.html" frameborder="0"></iframe>
+
+				</section>
+
+				<section data-background="images/presentacionbanner2.jpg">
+					<p>Nuevas opciones para la colocación vertical de objetos 3D</p>
+					<p style="font-size:18px;">La colocación vertical de edificios y otros objetos 3D se puede establecer utilizando un valor de campo, un valor z o una expresión. Un ejemplo de cuándo esto sería útil es cuando se colocan objetos que están bajo tierra o están volando por encima de la tierra.</p>
+					<iframe style="border: 4px solid #fff;box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);width:100%; height:400px; " src="https://developers.arcgis.com/javascript/latest/sample-code/scene-elevationinfo/live/index.html" frameborder="0"></iframe>
+				</section>
+
+				<section data-background="images/presentacionbanner2.jpg">
+					<img style=" width:150px;margin: none;background: none;border: none;box-shadow: none; " src="images/giphy.gif" alt="">
+					<p>Conclusiones</p>
+					<p style="font-size:21px;"> La implementación del renderizado de FeatureLayers usando WebGL se encuentra actualmente en versión beta. En un futuro se mejorará aún más la velocidad, la calidad y la capacidad de respuesta del proceso de dibujo.<br> Cuando la implementación beta alcance el mismo nivel de soporte que la implementación actual, WebGL se convertirá en el valor predeterminado para renderizar FeatureLayers en MapViews.</p>
+
+				</section>
+
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function() {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
