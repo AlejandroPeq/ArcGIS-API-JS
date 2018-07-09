@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>ArcGIS JS 4.8</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/night.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="icon" href="img/esri_icon.png" type="image/x-icon" />
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section id="primeraSlide" data-background="img/background3.png">
+				<img id="logo" src="img/logo2.png" alt="">
+				<h3 id="tituloPresentacion">ArcGIS JS API 4.8</h3>
+
+
+				<a href="https://twitter.com/alejanndropeq?lang=es" target="_blank" class="textoTwitter">
+					<img class="twitterIcon" src="img/twitter.png" alt=""> Alejandro Pequeño Pulleiro</a>
+
+
+			</section>
+
+			<section data-background="img/background4.png">
+				<h3>Etiquetas 2D</h3>
+				<p>Soportado el etiquetado 2D de polígonos o puntos en feature layers y CSV layers. Estos etiquetados se implementan en
+					cliente mediante WebGL.</p>
+				<iframe src="https://developers.arcgis.com/javascript/latest/sample-code/labels-multiple-classes/live/index.html" frameborder="0"></iframe>
+			</section>
+			<section data-background="img/background2.png">
+
+				<h3>Mapa de Calor</h3>
+				<p>Soportado los renderizados mediante mapas de calor. Puede ser definido mediante código, o creado en ArcGIS Online/Portal
+					guardado en webmaps.</p>
+				<iframe src="https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/live/index.html" frameborder="0"></iframe>
+
+			</section>
+
+			<section data-background="img/background1.png">
+
+				<h3>Mejoras en la parte cliente</h3>
+				<p>Añadir feature layers con cientos de miles de puntos y mantener un alto rendimiento. Los resultados se procesan de forma
+					dinámica a medida que navegamos por el visor.</p>
+				<iframe src="https://developers.arcgis.com/javascript/latest/sample-code/featurelayerview-query-geometry/live/index.html" frameborder="0"></iframe>
+			</section>
+
+			<section data-background="img/background4.png">
+
+				<h3>Color de Fondo personalizado</h3>
+				<p>Posibilidad de embeber escenas web con un fondo personalizado mediante el cambio de color para que se asemeje más al
+					estilo del sitio destino.</p>
+				<iframe src="https://developers.arcgis.com/javascript/latest/sample-code/sceneview-background/live/index.html" frameborder="0"></iframe>
+			</section>
+
+			<section data-background="img/background2.png">
+				<h3>Mejoras bajo tierra</h3>
+				<p>Visualizar escenas bajo tierra (escenas locales y gloabales). El suelo puede establecerse parcialmente transparente y
+					modificarse su color.</p>
+				<iframe src="https://developers.arcgis.com/javascript/latest/sample-code/sceneview-underground/live/index.html" frameborder="0"></iframe>
+
+			</section>
+
+			<section data-background="img/background1.png">
+				<h3>Mejoras en Dibujo</h3>
+				<p>El escalado y la rotación están ahora soportados para el sketching y el dibujado. (Nuevo eventos implementados)</p>
+				<iframe src="https://developers.arcgis.com/javascript/latest/sample-code/sketch-update-validation/live/index.html" frameborder="0"></iframe>
+
+			</section>
+
+			<section data-background="img/background4.png">
+				<h3>Consultas en cliente</h3>
+				<p>Soportadas las consultas espaciales en cliente, consultas mediante buffers de distancia y la capacidad de usar expresiones.</p>
+				<iframe src="https://developers.arcgis.com/javascript/latest/sample-code/featurelayerview-query-distance/live/index.html" frameborder="0"></iframe>
+				
+			</section>
+			
+			<section data-background="img/background2.png">
+				<h3>Widget Bookmark</h3>
+				<p>Nuevo widget para mostrar todos los marcadores de nuestros mapas web.</p>
+				<iframe src="https://developers.arcgis.com/javascript/latest/sample-code/widgets-bookmarks/live/index.html" frameborder="0"></iframe>
+
+			</section>
+
+		
+
+			<section data-background="img/background4.png">
+				<h3>Soporte completo Web Maps</h3>
+				<p>Prácticamente soportados todos los web maps creados mediante el último constructor online.
+					<!-- (Pendiente: capas con tiempo habilitado, etiquetas en polilíneas y WFS) -->
+				</p>
+				<iframe src="https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend-update/live/index.html" frameborder="0"></iframe>
+
+			</section>
+
+			<section id="ultimaSlide" data-background="img/background3.png">
+				<img id="logo" src="img/logo2.png" alt="">
+				<h3 id="tituloPresentacion">Recursos Adicionales</h3>
+
+				<ul>
+					<li>
+						<a href="https://developers.arcgis.com/javascript/latest/guide/release-notes/index.html" target="_blank">Novedades ArcGIS JS API</a>
+					</li>
+
+					<li>
+						<a href="https://developers.arcgis.com/javascript/" target="_blank">ArcGIS for Developers</a>
+					</li>
+					<li>
+						<a href="https://www.esri.com/arcgis-blog/products/js-api-arcgis/announcements/jsapi-4-8/" target="_blank">ArcGIS Blog</a>
+					</li>
+				</ul>
+
+
+
+
+
+			</section>
+
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
